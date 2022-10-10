@@ -1,0 +1,171 @@
+<!-- 문서 타입 -->
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>HTML 공부</title>
+
+        <!-- meta tag: 검색 엔진이 알 수 있도록 meta 정보를 담음 -->
+        <meta charset="utf-8" />
+    </head>
+
+    <body>
+        <!-- h1, h2, h3, h4, h5, h6 -->
+        <h1>제목1</h1>
+        <h2>제목2</h2>
+        <h3>제목3</h3>
+        <h4>제목4</h4>
+        <h5>제목5</h5>
+        <h6>제목6</h6>
+
+        <hr />
+
+        <!-- p -->
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident
+            nostrum animi repellendus doloremque error numquam impedit alias qui
+            ut debitis.
+        </p>
+
+        <hr />
+
+        <!-- ul-li, ol-li, dl-dt-dd -->
+        <ul>
+            <li>짜장면</li>
+            <li>짬뽕</li>
+            <li>탕수육</li>
+        </ul>
+        <ol>
+            <li>라면</li>
+            <li>된장찌개</li>
+            <li>삼겹살</li>
+        </ol>
+
+        <h2>종다리</h2>
+        <dl>
+            <dt>개요</dt>
+            <dd>한국에서 흔히 번식하는 텃새</dd>
+            <dt>서식</dt>
+            <dd>농경지(논, 밭), 풀밭</dd>
+            <dt>먹이</dt>
+            <dd>곤충류, 거미류, 식물의 씨앗</dd>
+        </dl>
+
+        <hr />
+
+        <!-- a, img -->
+        <!-- c.f. a - target -->
+        <!-- c.f. img - alt -->
+        <a href="https://google.com" target="_blank">구글</a>
+        <img src="imgs/sunrise.jpg" alt="sunrise" width="100%" />
+
+        <hr />
+
+        <!-- table-thead(tr-th)-tbody(tr-td)-caption -->
+        <!-- c.f. td - colspan, rowspan -->
+        <style>
+            table {
+                border-collapse: collapse;
+            }
+            th,
+            td {
+                border: 1px solid black;
+                text-align: center;
+            }
+        </style>
+        <table>
+            <thead>
+                <tr>
+                    <th>보안 및 개인정보 보호</th>
+                    <th>크롬</th>
+                    <th>엣지</th>
+                    <th>사파리</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>사생활 보호 모드</td>
+                    <td colspan="3">✅</td>
+                </tr>
+                <tr>
+                    <td>기본적으로 제3자 추적 쿠키 차단</td>
+                    <td>✅</td>
+                    <td rowspan="2">➖</td>
+                    <td>✅</td>
+                </tr>
+                <tr>
+                    <td>암호화폐 채굴 스크립트 차단</td>
+                    <td>✅</td>
+                    <td>✅</td>
+                </tr>
+            </tbody>
+            <caption>
+                *브라우저
+            </caption>
+        </table>
+
+        <hr />
+
+        <!-- form-label-input, textarea -->
+        <!-- c.f. input type - text, number, password, date, checkbox, radio, range, color -->
+        <!-- c.f. input id == label for -->
+        <!-- c.f. input name => 1. tag grouping 2. accessing tag from controller -->
+        <form action="controller">
+            <label for="userName">유저이름</label>
+            <input
+                type="text"
+                name="userName"
+                id="userName"
+                placeholder="이름"
+                value="홍길동"
+            />
+            <br />
+            <label for="userAge">유저나이</label>
+            <input
+                type="number"
+                max="1"
+                min="10"
+                name="userAge"
+                id="userAge"
+                placeholder="나이"
+            />
+
+            <hr />
+
+            <label for="userPassword">비밀번호</label
+            ><input
+                type="password"
+                name="userPassword"
+                id="userPassword"
+                placeholder="비밀번호"
+            />
+            <br />
+            <label for="date">날짜</label
+            ><input type="date" name="date" id="date" />
+
+            <hr />
+
+            <label for="basketball">농구</label
+            ><input type="checkbox" name="basketball" id="basketball" />
+            <label for="soccer">축구</label
+            ><input type="checkbox" name="soccer" id="soccer" />
+            <label for="volley">배구</label
+            ><input type="checkbox" name="volley" id="volley" />
+
+            <hr />
+
+            <label for="kr">한국</label
+            ><input type="radio" name="country" id="kr" />
+            <label for="us">미국</label
+            ><input type="radio" name="country" id="us" />
+            <label for="uk">영국</label
+            ><input type="radio" name="country" id="uk" />
+
+            <hr />
+
+            <input type="range" name="" id="" />
+            <input type="color" name="" id="" />
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </form>
+    </body>
+</html>

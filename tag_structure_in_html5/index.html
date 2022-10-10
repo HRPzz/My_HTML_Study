@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- div, span - tag grouping -->
+        <!-- c.f. p, div - block => line-break -->
+        <!-- c.f. span - inline => non-line-break -->
+        <style>
+            p {
+                border: 1px solid green;
+            }
+            div {
+                border: 1px solid red;
+            }
+            span {
+                color: red;
+            }
+        </style>
+        <div>
+            <p>Lorem <span>ipsum dolor</span> sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <hr />
+
+        <!-- header-nav, section-article, aside, footer -->
+        <!-- c.f. 네이버 홈페이지 구조 따라하기 -->
+        <style>
+            p,
+            div {
+                border: none;
+            }
+            span {
+                color: black;
+            }
+        </style>
+        <div>
+            <header>
+                <h1>logo</h1>
+                <div>검색창</div>
+                <nav>
+                    <ul>
+                        <li>메일</li>
+                        <li>카페</li>
+                        <li>블로그</li>
+                        <li>지식in</li>
+                        <li>쇼핑</li>
+                    </ul>
+                </nav>
+            </header>
+            <section>
+                <h2>메인컨텐츠</h2>
+                <article>
+                    <h3>뉴스스탠드</h3>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Nesciunt voluptas odio illo quaerat vero
+                        consequatur facilis porro unde aperiam dolore!
+                    </p>
+                </article>
+                <article>
+                    <h3>읽을만한글</h3>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Nesciunt voluptas odio illo quaerat vero
+                        consequatur facilis porro unde aperiam dolore!
+                    </p>
+                </article>
+            </section>
+            <aside>
+                <h2>트렌드</h2>
+                <ul>
+                    <li>a</li>
+                    <li>b</li>
+                    <li>c</li>
+                    <li>d</li>
+                </ul>
+            </aside>
+            <footer>
+                <address>주소는 0000입니다</address>
+                <small>010-000-000</small>
+            </footer>
+        </div>
+    </body>
+</html>
